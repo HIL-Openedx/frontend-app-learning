@@ -267,19 +267,8 @@
 .unit-container {
   padding-top: 0;
   padding-bottom: 2rem;
-  max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
-
-  @media (min-width: map-get($grid-breakpoints, "sm")) {
-    padding-left: $grid-gutter-width;
-    padding-right: $grid-gutter-width;
-  }
-
-  @media (min-width: 830px) {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
 }
 
 .unit-iframe-wrapper {
