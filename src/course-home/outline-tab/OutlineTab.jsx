@@ -65,7 +65,7 @@ const OutlineTab = ({ intl }) => {
     marketingUrl,
   } = useModel('coursewareMeta', courseId);
 
-  const [expandAll, setExpandAll] = useState(false);
+  const [expandAll, setExpandAll] = useState(true);
   const navigate = useNavigate();
 
   const eventProperties = {
