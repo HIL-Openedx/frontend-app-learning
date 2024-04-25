@@ -157,7 +157,6 @@ const OutlineTab = ({ intl }) => {
               <UpgradeToShiftDatesAlert model="outline" logUpgradeLinkClick={logUpgradeToShiftDatesLinkClick} />
             </>
           )}
-          <StartOrResumeCourseCard />
           <WelcomeMessage courseId={courseId} />
           {rootCourseId && (
             <>
@@ -182,35 +181,7 @@ const OutlineTab = ({ intl }) => {
             </>
           )}
         </div>
-        {rootCourseId && (
-          <div className="col col-12 col-md-4">
-            <ProctoringInfoPanel />
-            { /** Defer showing the goal widget until the ProctoringInfoPanel has resolved or has been determined as
-             disabled to avoid components bouncing around too much as screen is rendered */ }
-            {(!enableProctoredExams || proctoringPanelStatus === 'loaded') && weeklyLearningGoalEnabled && (
-              <WeeklyLearningGoalCard
-                daysPerWeek={selectedGoal && 'daysPerWeek' in selectedGoal ? selectedGoal.daysPerWeek : null}
-                subscribedToReminders={selectedGoal && 'subscribedToReminders' in selectedGoal ? selectedGoal.subscribedToReminders : false}
-              />
-            )}
-            <CourseTools />
-            <UpgradeNotification
-              offer={offer}
-              verifiedMode={verifiedMode}
-              accessExpiration={accessExpiration}
-              contentTypeGatingEnabled={datesBannerInfo.contentTypeGatingEnabled}
-              marketingUrl={marketingUrl}
-              upsellPageName="course_home"
-              userTimezone={userTimezone}
-              shouldDisplayBorder
-              timeOffsetMillis={timeOffsetMillis}
-              courseId={courseId}
-              org={org}
-            />
-            <CourseDates />
-            <CourseHandouts />
-          </div>
-        )}
+
       </div>
     </>
   );
