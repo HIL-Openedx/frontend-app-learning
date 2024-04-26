@@ -299,6 +299,9 @@
   border: none;
   display: block;
 }
+.unit>h1 {
+  padding-left:1em;
+}
 .unit>h1~button {
   display:none;
 }
