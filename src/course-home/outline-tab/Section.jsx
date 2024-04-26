@@ -36,10 +36,10 @@ const Section = ({
     setOpen(expand);
   }, [expand]);
 
-  useEffect(() => {
-    setOpen(defaultOpen);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  //useEffect(() => {
+  //  setOpen(defaultOpen);
+  //// eslint-disable-next-line react-hooks/exhaustive-deps
+  //}, []);
 
   const sectionTitle = (
     <div className="row w-100 m-0">
