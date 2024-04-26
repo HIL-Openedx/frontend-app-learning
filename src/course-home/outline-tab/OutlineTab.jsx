@@ -140,7 +140,7 @@ const OutlineTab = ({ intl }) => {
             }}
           />
         </div>
-        <div className="col col-12 col-md-8">
+        <div className="col col-12">
           <AlertList
             topic="outline-course-alerts"
             className="mb-3"
