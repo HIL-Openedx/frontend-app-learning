@@ -19,6 +19,10 @@
   header {
     flex: 0 0 auto;
 
+    &.learning-header a[href="null"] {
+      display:none;
+    }
+
     .logo {
       display: block;
       box-sizing: content-box;
@@ -36,6 +40,10 @@
   footer {
     flex: 0;
   }
+}
+
+.course-outline-tab button {
+  display:none;
 }
 
 .course-tabs-navigation {
