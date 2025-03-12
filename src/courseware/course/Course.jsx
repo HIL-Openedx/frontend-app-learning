@@ -91,18 +91,6 @@ const Course = ({
           isStaff={isStaff}
           unitId={unitId}
         />
-        {shouldDisplayTriggers && (
-          <>
-            <Chat
-              enabled={course.learningAssistantEnabled}
-              enrollmentMode={course.enrollmentMode}
-              isStaff={isStaff}
-              courseId={courseId}
-              contentToolsEnabled={course.showCalculator || course.notes.enabled}
-            />
-            <SidebarTriggers />
-          </>
-        )}
       </div>
 
       <AlertList topic="sequence" />

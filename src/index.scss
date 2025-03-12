@@ -19,6 +19,10 @@
   header {
     flex: 0 0 auto;
 
+    &.learning-header a[href="null"] {
+      display:none;
+    }
+
     .logo {
       display: block;
       box-sizing: content-box;
@@ -38,8 +42,13 @@
   }
 }
 
+.course-outline-tab button {
+  display:none;
+}
+
 .course-tabs-navigation {
   border-bottom: solid 1px #eaeaea;
+  display:none;
 
   .nav a,
   .nav button {
@@ -290,7 +299,12 @@
   border: none;
   display: block;
 }
-
+.unit>h1 {
+  padding-left:1em;
+}
+.unit>h1~button {
+  display:none;
+}
 .unit-navigation {
   display: flex;
   justify-content: center;

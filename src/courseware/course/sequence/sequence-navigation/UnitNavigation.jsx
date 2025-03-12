@@ -63,6 +63,7 @@ const UnitNavigation = ({
           {buttonText}
         </UnitNavigationEffortEstimate>
         <FontAwesomeIcon icon={nextArrow} className="ml-2" size="sm" />
+        {disabled ? '　請點擊左上／左下圖標以返回' : ''}
       </Button>
     );
   };

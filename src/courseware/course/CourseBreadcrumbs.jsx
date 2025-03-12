@@ -161,11 +161,10 @@ const CourseBreadcrumbs = ({
             to={`/course/${courseId}/home`}
             replace
           >
-            <FontAwesomeIcon icon={faHome} className="mr-2" />
             <FormattedMessage
               id="learn.breadcrumb.navigation.course.home"
               description="The course home link in breadcrumbs nav"
-              defaultMessage="Course"
+              defaultMessage="目錄"
             />
           </Link>
         </li>
